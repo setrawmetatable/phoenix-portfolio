@@ -1,11 +1,11 @@
+"use client";
 import React from "react";
-import { MotionConfig, motion } from "framer-motion";
+import { motion, MotionConfig } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Progress } from "@/components/ui/progress";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { Github, Mail, Sword, Shield, Cpu, Gamepad2, Code2, Layers3, TerminalSquare, Rocket, Link as LinkIcon, Star, CircleCheck, Download, ExternalLink, Hammer, Radar, Zap, Globe2 } from "lucide-react";
@@ -348,7 +348,7 @@ export default function PhoenixPortfolio() {
         <section id="projects" className="max-w-6xl mx-auto px-4 py-12">
           <SectionTitle icon={<Rocket className="h-5 w-5" />} title="Selected Projects" kicker="Portfolio" />
           <div className="grid md:grid-cols-2 gap-6">
-            {projects.map((p, i) => (
+            {projects.map((p) => (
               <Card key={p.title} className="group bg-white/5 border-white/10 rounded-2xl overflow-hidden">
                 <CardHeader className="pb-2">
                   <div className="flex items-center justify-between">
